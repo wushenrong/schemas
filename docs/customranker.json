@@ -4,7 +4,6 @@
   "$ref": "#/definitions/customRanker",
   "definitions": {
     "customRanker": {
-      "additionalProperties": false,
       "properties": {
         "players": {
           "items": {

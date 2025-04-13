@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://wushenrong.github.io/schemas/customranker.json",
+  "$ref": "#/definitions/customRanker",
+  "definitions": {
+    "customRanker": {
+      "additionalProperties": false,
+      "properties": {
+        "players": {
+          "items": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "$ref": "https://wushenrong.github.io/schemas/player.json"
+              }
+            ]
+          },
+          "minItems": 2,
+          "type": "array",
+          "uniqueItems": true
+        },
+        "title": {
+          "minLength": 3,
+          "type": "string"
+        }
+      },
+      "required": ["title", "players"],
+      "title": "Custom Ranker",
+      "type": "object"
+    }
+  }
+}

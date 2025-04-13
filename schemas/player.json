@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://wushenrong.github.io/schemas/player.json",
+  "$ref": "#/definitions/player",
+  "definitions": {
+    "player": {
+      "additionalProperties": false,
+      "properties": {
+        "image": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://[-_a-zA-Z0-9.]{2,256}\\.[a-z]{2,4}\b(/[-_a-zA-Z0-9./]*)([-_a-zA-Z0-9.]+)\\.(png|jp(e)?g)$"
+        },
+        "name": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": ["name"],
+      "type": "object"
+    }
+  }
+}

@@ -7,14 +7,9 @@
       "properties": {
         "players": {
           "items": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "$ref": "https://wushenrong.github.io/schemas/player.json"
-              }
-            ]
+            {
+              "$ref": "https://wushenrong.github.io/schemas/player.json"
+            }
           },
           "minItems": 2,
           "type": "array",

@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://wushenrong.github.io/schemas/player.json",
+  "$id": "https://raw.githubusercontent.com/wushenrong/schemas/main/player.schema.json",
   "$ref": "#/definitions/player",
   "definitions": {
     "player": {
@@ -16,7 +16,9 @@
           "type": "string"
         }
       },
-      "required": ["name"],
+      "required": [
+        "name"
+      ],
       "type": "object"
     }
   }
